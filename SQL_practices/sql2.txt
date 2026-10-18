@@ -1,0 +1,16 @@
+
+CREATE TABLE student_final (
+  ID INT PRIMARY KEY,
+  name VARCHAR(200),
+  courseId INT,
+  courseTitle VARCHAR(200),
+  grade INT,
+  lettergrade VARCHAR(2)
+);
+INSERT INTO student_final VALUES
+(1, 'Karim Uddin', 101, 'Web Programming', 85, 'B'),
+(2, 'Rahim Ahmed', 101, 'Web Programming', 92, 'A'),
+(3, 'Jashim Hossain', 102, 'Project Management', 78, 'C'),
+(4, 'Jasica Ahmed', 101, 'Web Programming', 65, 'D'),
+(5, 'Faria Karim', 102, 'Project Management', 95, 'A'),
+(6, 'Niassoh Jasin', 103, 'System Analysis and Design', 80, 'B');

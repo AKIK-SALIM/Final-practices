@@ -1,0 +1,19 @@
+CREATE TABLE items(
+   ID INT PRIMARY KEY,
+   name VARCHAR(200),
+   price INT,
+   stock INT
+);
+INSERT INTO items VALUES 
+(1,'a',50,10),
+(2,'b',500,20),
+(3,'c',450,30),
+(4,'d',550,40);
+
+Comments->SELECT column choose | aggregation(SUM,AVG,COUNT)
+FROM <table_name>
+WHERE <condition on individual row|condition without aggregation>
+GROUP BY <for each column>
+HAVING <condition on aggregation>
+GROUP BY <column_name> DESC|ASC
+LIMIT <n> (top n results)<-comments 

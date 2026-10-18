@@ -1,0 +1,15 @@
+CREATE TABLE book_loans(
+   loanID INT PRIMARY KEY,
+   studentName VARCHAR(200),
+   bookTitle  VARCHAR(200),
+   daysOverdue INT,
+   penaltyFee DECIMAL(10,2),
+   stat VARCHAR(200)
+);
+INSERT INTO book_loans VALUES
+(101,'Abdul','Data Structure',0,0.00,'Returned'),
+(102,'Jabbar','Operating System',12,24.00,'Overdue'),
+(103,'Barkat','Discrete Math',5,10.00,'Overdue'),
+(104,'Rahim','Linear Algebra',2,4.00,'Overdue'),
+(105,'Karim','Data Structure',15,30.00,'Lost'),
+(106,'Fahim','Operating System',0,0.00,'Returned');
